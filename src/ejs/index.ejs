@@ -1,0 +1,85 @@
+<% let title = 'トップページ'; %>
+<% let description = 'ディスクリプション'; %>
+<% let pageId = 'home'; %>
+<%- include('./_inc/_header', { title: title, description: description, pageId: pageId }) %>
+
+<section class="l-question p-question">
+
+<div class="p-question__inner l-inner">
+     <div class="p-content__text">
+        <h2 class="c-question-title"><%= 'Q&A'%></h2>
+        <p class="c-question-subtitle"><%= 'よくある質問'%></p>
+        <span class="c-question__border"></span>
+    </div>
+ <div class="p-question__wrapper">
+          <ul class="p-question__content">
+            <li>
+              <section>
+                <h3 class="c-question__content title">
+                <span class="c-question__alphabet">Q</span>
+                <%= '大体の見積り金額を電話で教えてもらえますか？'%>
+                </h3>
+                <div class="box">
+                  <p><%= '内容によって変化いたしますのでまずはお問い合わせフォームよりご相談ください。'%></p>
+                </div>
+              </section>
+            </li>
+            
+            <li>
+              <section>
+                <h3 class="c-question__content title"><span class="c-question__alphabet">Q</span><%= "もともと貼ってあるフィルムはいくらで剥がしてもらえますか？" %></h3>
+                <div class="box">
+                  <p><%= "可能です。お気軽にご相談ください。" %></p>
+                </div>
+              </section>
+            </li>
+            
+            <li>
+              <section>
+                <h3 class="c-question__content title"><span class="c-question__alphabet">Q</span><%= "途中でキャンセルもしくはフィルムの変更は可能ですか？" %></h3>
+                <div class="box">
+                  <p><%= "お問い合わせフォームより日時や内容などをご記入いただきご相談ください。" %></p>
+                </div>
+              </section>
+            </li>
+
+            <li>
+              <section>
+                <h3 class="c-question__content title"><span class="c-question__alphabet">Q</span><%= "土日祝日でも施工していますか？" %></h3>
+                <div class="box">
+                  <p><%= "お問い合わせフォームより日時や内容などをご記入いただきご相談ください。" %></p>
+                </div>
+              </section>
+            </li>
+
+            <li>
+              <section>
+                <h3 class="c-question__content title"><span class="c-question__alphabet">Q</span><%= "引越し後でもガラスフィルムの施工は可能ですか？" %></h3>
+                <div class="box">
+                  <p><%= "お問い合わせフォームより日時や内容などをご記入いただきご相談ください。" %></p>
+                </div>
+              </section>
+            </li>
+
+            <li>
+              <section>
+                <h3 class="c-question__content title"><span class="c-question__alphabet">Q</span><%= "現物サンプルを見たい時にはどうすれば良いですか？" %></h3>
+                <div class="box">
+                  <p><%= "お問い合わせフォームより日時や内容などをご記入いただきご相談ください。" %></p>
+                </div>
+              </section>
+            </li>
+          </ul>
+        </div>
+  
+          <div class="c-question__button l-button">
+            <h2 class="c-button__text">Q&A</h2>
+            <span class="c-button__arrow"></span>
+          </div>
+      </div>
+
+
+
+</section>
+
+<%- include('./_inc/_footer')  %>

@@ -1,0 +1,189 @@
+@charset "UTF-8";
+body{
+   background:#F3F6F6; 
+   font-family: "ヒラギノ丸ゴ ProN", "Hiragino Maru Gothic ProN", sans-serif;
+}
+.l-question{
+    margin-top: 3rem;
+}
+
+.p-content__text{
+    text-align: center;
+    margin-bottom: 5rem;
+    font-family: 'Osaka', sans-serif;
+}
+
+
+/*アコーディオン全体設定*/
+.p-question__content{
+    list-style: none;
+    width: 85%;
+    max-width: 900px;
+    margin:0 auto;
+    position: relative;
+    padding: 0;
+}
+
+.p-question__content li{
+    margin: 10px 0;
+}
+
+.p-question__wrapper{
+    position: relative;
+    max-width: 1100px;
+    margin: auto;
+}
+.p-question__wrapper:before{
+        content: "";
+        position: absolute;
+        border-top: 120px solid #E5EFF4;
+        border-right: 120px solid transparent;
+        border-bottom: 120px solid transparent;
+        border-left: 120px solid #E5EFF4;
+        top: -9%;
+        left: 2%;
+}
+
+.c-question__content {
+    position: relative;
+    cursor: pointer;
+    font-size:16px;
+    font-weight: 500;
+    color: #616161;
+    padding: 2% 3%;
+    transition: all .5s ease;
+    background-color: #fff;
+    margin-bottom: 0;
+}
+@media screen and (max-width:768px){
+    .c-question__content {
+        font-size:.5rem;
+        width: 90%;
+        margin: auto;
+    }
+}
+p.c-question-subtitle {
+    margin: 10px 0 30px 0;
+}
+.c-question__alphabet{
+    font-weight: bold;
+    color: #6AB7E0;
+    padding-right: 1rem;
+}
+.c-question__border{
+    color:#87C3E5;
+    border-bottom:2px solid #87C3E5;
+    display: block;
+    width: 8%;
+    margin: auto;
+    position: absolute;
+
+    left: 46.5%;
+}
+
+
+.c-question__button{
+    width: 23%;
+    background-color: #87C3E5;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+    box-shadow: 3px 3px #dcdfdf;
+
+}
+@media screen and (max-width:768px){
+    .c-question__button{
+    width: 50%;
+    padding: 0px 20px;
+}
+}
+
+
+
+.c-button__text{
+    color:#fff;
+    font-family: 'Osaka', sans-serif;
+    letter-spacing: 5px;
+    font-weight: bold;
+    text-align: center;
+    padding-right: .5rem;
+}
+
+.c-question-title{
+    font-size: 2rem;
+    margin: 0;
+}
+@media screen and (max-width:768px){
+    .c-question-title{
+        font-size: 2rem;
+    }
+}
+
+.c-button__arrow{
+  width: 40px;
+  height: 8px;
+  border-bottom: 2px solid #fff;
+  border-right: 2px solid #fff;
+  transform: skew(45deg);
+  display: block;
+}
+
+/*アイコンの＋と×*/
+.title::before,
+.title::after{
+    position: absolute;
+    content:'';
+    width: 15px;
+    height: 2px;
+    background-color: #333;
+    
+}
+.title::before{
+    top: 50%;
+    right: 15px;
+}
+@media screen and (max-width:768px){
+    .title::before{
+    top:80%;
+    transform: rotate(0deg);
+    }
+}
+
+.title::after{
+    top: 50%;
+    right: 15px;
+    transform: rotate(90deg);
+    
+}
+@media screen and (max-width:768px){
+    .title::after{
+    top:80%;
+}
+}
+
+/*　closeというクラスがついたら形状変化　*/
+.title.close::before{
+  transform: rotate(45deg);
+}
+
+.title.close::after{
+  transform: rotate(-45deg);
+}
+
+/*アコーディオンで現れるエリア*/
+.box {
+    display: none;/*はじめは非表示*/
+    background: rgb(241, 241, 241);
+    padding: 2% 3%;
+    font-size: 13px;
+    width: 90%;
+    margin: auto;
+}
+ @media screen and (max-width:768px){
+    .box{  
+    font-size: .3rem;     
+    }
+    
+}
